@@ -48,7 +48,7 @@ const Nav = () => {
                 src={session?.user.image}
                 width={37}
                 height={37}
-                className='rounded-full cursor-pointer'
+                className='rounded-full'
                 alt='profile'
               />
             </Link>
@@ -73,7 +73,7 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className='sm:hidden flex relative cursor-pointer'>
+      <div className='sm:hidden flex relative'>
         {session?.user ? (
           <div className='flex'>
             <Image
@@ -86,7 +86,7 @@ const Nav = () => {
             />
 
             {toggleDropdown && (
-              <div className='dropdown cursor-pointer'>
+              <div className='dropdown'>
                 <Link
                   href='/profile'
                   className='dropdown_link'
