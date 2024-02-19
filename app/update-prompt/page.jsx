@@ -63,4 +63,10 @@ const UpdatePrompt = () => {
   );
 };
 
-export default UpdatePrompt;
+const EditPrompt = () => {
+  return <Suspense>
+      <UpdatePrompt />
+  </Suspense>
+}
+
+export default EditPrompt;
